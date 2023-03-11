@@ -1492,7 +1492,132 @@ color: #AAAAAA;
     max-width: 240px;
   }
 
+.section_message_mobile{
+  display: none;
+  margin-top: 120px;
+  .slideshow-container {
+    margin-top: 30px;
+    max-width: 300;
+    margin: auto;
+  }
+  .item{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+  }
+  .item_you{
+    padding: 20px;
+    background: #2A2E33;
+border-radius: 20px 20px 20px 0px;
+span{
+  font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
 
+font-feature-settings: 'pnum' on, 'lnum' on;
+
+color: #fff;
+p{
+  color: #777777;
+}
+}
+  }
+  .wrapper_dots_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+  }
+  .item_me{
+    padding: 20px;
+    border-radius: 20px 20px 0px 20px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    span{
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      width: 260px;
+/* or 24px */
+
+      font-feature-settings: 'pnum' on, 'lnum' on;
+
+/* black */
+
+      color: #2A2E33;
+    }
+  }
+  
+  
+  
+  /* Скрыть изображения по умолчанию */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Вперед иназад кнопки */
+  .prev, .next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.5);
+backdrop-filter: blur(15px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 20px;
+width: 70px;
+height: 70px;
+    span{
+      background: linear-gradient(100.92deg, #A259FF 13.57%, #FF6250 97.65%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+    }
+  }
+  
+  /* Точки/пули/индикаторы */
+  .dot {
+    cursor: pointer;
+    height: 5px;
+    width: 5px;
+    margin: 0 2px;
+    background-color: #ABA3BC;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    width: 10px;
+    height: 10px;
+    background:linear-gradient(100.92deg, #A259FF 13.57%, #FF6250 97.65%);
+  }
+  
+  /* Исчезающая анимация */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+}
 
 
 

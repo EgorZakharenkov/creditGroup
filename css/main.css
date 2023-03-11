@@ -1435,6 +1435,128 @@ datalist {
   max-width: 240px;
 }
 
+.section_message_mobile {
+  display: none;
+  margin-top: 120px;
+  /* Скрыть изображения по умолчанию */
+  /* Вперед иназад кнопки */
+  /* Точки/пули/индикаторы */
+  /* Исчезающая анимация */
+}
+.section_message_mobile .slideshow-container {
+  margin-top: 30px;
+  max-width: 300;
+  margin: auto;
+}
+.section_message_mobile .item {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section_message_mobile .item_you {
+  padding: 20px;
+  background: #2A2E33;
+  border-radius: 20px 20px 20px 0px;
+}
+.section_message_mobile .item_you span {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #fff;
+}
+.section_message_mobile .item_you span p {
+  color: #777777;
+}
+.section_message_mobile .wrapper_dots_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+}
+.section_message_mobile .item_me {
+  padding: 20px;
+  border-radius: 20px 20px 0px 20px;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+.section_message_mobile .item_me span {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  width: 260px;
+  /* or 24px */
+  font-feature-settings: "pnum" on, "lnum" on;
+  /* black */
+  color: #2A2E33;
+}
+.section_message_mobile .mySlides {
+  display: none;
+}
+.section_message_mobile .prev, .section_message_mobile .next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+  width: 70px;
+  height: 70px;
+}
+.section_message_mobile .prev span, .section_message_mobile .next span {
+  background: linear-gradient(100.92deg, #A259FF 13.57%, #FF6250 97.65%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.section_message_mobile .dot {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #ABA3BC;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.section_message_mobile .active, .section_message_mobile .dot:hover {
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(100.92deg, #A259FF 13.57%, #FF6250 97.65%);
+}
+.section_message_mobile .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .sub_hidden {
   display: none;
 }/*# sourceMappingURL=main.css.map */
