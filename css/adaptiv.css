@@ -1,0 +1,259 @@
+@media screen and (max-width: 550px) {
+  .sub_title {
+    font-size: 24px;
+  }
+  .sub_hidden {
+    font-size: 24px;
+  }
+  .section_8 {
+    display: none;
+  }
+  header {
+    display: none;
+  }
+  header .header_contacts {
+    padding: 16px 20px;
+  }
+  header .main_menu {
+    padding: 0 20px;
+  }
+  header .secondary_menu {
+    padding: 0 20px;
+  }
+  .container {
+    max-width: 320px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .section_1 .benefits {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .section_1 .logos {
+    flex-direction: column;
+  }
+  .section_1 .wrapper {
+    flex-direction: column-reverse;
+  }
+  .section_1 .wrapper .img {
+    width: 300px;
+  }
+  .section_1 .wrapper .img img {
+    width: 300px;
+  }
+  .section_1 .wrapper .info .form {
+    flex-direction: column;
+  }
+  .section_1 .wrapper .info .title {
+    text-align: center;
+    font-size: 20px;
+    width: 279px;
+  }
+  .section_1 .wrapper .info .title br {
+    display: none;
+  }
+  .section_1 .wrapper .info p {
+    text-align: center;
+    width: 279px;
+  }
+  .section_2 .item {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .section_2 .item img {
+    width: 300px;
+  }
+  .section_2 .item .info .btn-default {
+    width: 100%;
+    justify-content: center;
+  }
+  .section_2 .item .info .btn-default img {
+    width: 20px;
+  }
+  .section_2 .item .info .spisok .item_spisok img {
+    width: 20px;
+  }
+  .section_2 .item .info .benefits_cards_1 {
+    position: absolute;
+    width: 271px;
+    left: 19px;
+    top: -110px;
+  }
+  .section_2 .item .info .benefits_cards {
+    position: absolute;
+    width: 271px;
+    top: -115px;
+    right: 15px;
+  }
+  .section_2 .item .info .mdi_shield-car {
+    display: none;
+  }
+  .section_2 .item .info .folder_house_2 {
+    display: none;
+  }
+  .section_2 .item .info .folder_house {
+    display: none;
+  }
+  .section_2 .item .sub_title {
+    display: none;
+  }
+  .section_2 .item .sub_hidden {
+    display: block;
+  }
+  .section_2 .item_right {
+    flex-direction: column-reverse;
+  }
+  .section_3 .steps {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .section_3 .steps .line {
+    display: none;
+  }
+  .section_4 .calculator {
+    padding: 40px 30px;
+  }
+  .section_4 .calculator .wrapper_items {
+    flex-direction: column;
+    gap: 71px;
+  }
+  .section_4 .calculator .wrapper_items .item .wrapper {
+    width: 100%;
+  }
+  .section_4 .calculator .wrapper_items .item .wrapper datalist {
+    width: 100%;
+  }
+  .section_4 .calculator .wrapper_items .item .wrapper datalist .option_hide {
+    display: none;
+  }
+  .section_4 .calculator .wrapper_items .item .wrapper_1 {
+    width: 100%;
+  }
+  .section_4 .calculator .wrapper_items .item .wrapper_1 datalist {
+    width: 100%;
+  }
+  .section_4 .calculator .wrapper_items .item .wrapper_1 datalist .option_hide {
+    display: none;
+  }
+  .section_4 .calculator .predlojeniya {
+    display: flex;
+    flex-direction: column;
+  }
+  .section_4 .calculator .predlojeniya .soglasie {
+    width: 239px;
+  }
+  .section_4 .calculator .predlojeniya .soglasie div {
+    font-size: 11px;
+    text-align: center;
+  }
+  .section_4 .calculator .predlojeniya .wrapper {
+    flex-direction: column;
+  }
+  .section_4 .calculator .predlojeniya .wrapper .item {
+    margin-top: 27px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .section_4 .calculator .predlojeniya .wrapper .item form .number_input {
+    margin: 0;
+  }
+  .section_4 .calculator .predlojeniya .wrapper .item .btn {
+    margin: 0;
+  }
+  .section_4 .calculator .predlojeniya .wrapper .item .btn span {
+    width: 150px;
+  }
+  .section_4 .calculator .predlojeniya .wrapper .info {
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+  }
+  .section_4 .calculator .predlojeniya .wrapper .info .item {
+    align-items: start;
+  }
+  .section_6 .about_us {
+    padding: 30px 20px;
+    border-radius: 30px;
+  }
+  .section_6 .about_us .sub_title {
+    font-size: 24px;
+    text-align: start;
+  }
+  .section_6 .about_us .text {
+    padding: 0;
+  }
+  .section_6 .about_us .text p {
+    font-size: 16px;
+    text-align: start;
+  }
+  .section_6 .about_us .items {
+    flex-direction: column;
+  }
+  .section_6 .about_us .items .item .top span {
+    font-size: 18px;
+  }
+  .section_6 .about_us .items .item p {
+    font-size: 16px;
+    width: 239px;
+  }
+  .section_7 .item .top {
+    flex-direction: column;
+    align-items: start;
+  }
+  .section_7 .item .wrapper {
+    flex-direction: column;
+  }
+  .section_7 .item .wrapper .left {
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .section_7 .item .wrapper .left .btn-default {
+    position: inherit;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    width: 256px;
+  }
+  .section_7 .item .wrapper .left .btn-default span {
+    font-size: 16px;
+    min-width: 188px;
+  }
+  .section_7 .item .wrapper .left p {
+    width: 100%;
+  }
+  .footer .item .top {
+    flex-direction: column;
+  }
+  .footer .item .top .links {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .footer .item .middle .wrapper {
+    flex-direction: column;
+  }
+  .footer .item .middle .wrapper .info_left {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer .item .bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .footer .item .bottom span {
+    width: 300px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .fin-support .last .btn span {
+    width: 146px;
+  }
+}/*# sourceMappingURL=adaptiv.css.map */

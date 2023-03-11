@@ -280,7 +280,7 @@ datalist {
     border-radius: 20px;
     margin-top: 19px;
     display: flex;
-    gap: 42px;
+    justify-content: space-between;
     .wrapp_item{
       display: flex;
       align-items: center;
@@ -295,7 +295,6 @@ datalist {
       color: #2A2E33;
       text-decoration: none;
       cursor: pointer;
-
     }
   }
 }
@@ -1361,6 +1360,25 @@ datalist {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      .logo_footer{
+        display: flex;
+        align-items: center;
+        gap: 26px;
+        span{
+          font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 135%;
+/* or 19px */
+
+display: flex;
+align-items: center;
+font-feature-settings: 'pnum' on, 'lnum' on;
+
+color: #AAAAAA;
+        }
+      }
       .links{
         display: flex;
         align-items: center;
@@ -1488,252 +1506,7 @@ datalist {
 }
 
 
-@media screen and (max-width: 1000px){
-  header{
-    display: none;
-    .header_contacts{
-      padding: 16px 20px;
-    }
-    .main_menu{
-      padding: 0 20px;
-    }
-    .secondary_menu{
-      padding: 0 20px;
-    }
-  }
-  .container{
-    max-width: 350px;
-    margin: 0 auto;
-  }
-  .section_1{
-    .benefits{
-      flex-direction: column;
-    }
-    .logos{
-      flex-direction: column;
-    }
-    .wrapper{
-      flex-direction: column-reverse;
-      .img{
-        width: 300px;
-        img{
-          width: 300px;
-        }
-      }
-      .info{
-        .form{
-          flex-direction: column;
-        }
-        .title{
-          text-align: center;
-          font-size: 20px;
-          width: 279px;
-          br{
-            display: none;
-          }
-        }
-        p{
-          text-align: center;
-          width: 279px;
-        }
-      }
-    }
-  }
-  .section_2{
 
-    .item{
-
-      .info{
-        .benefits_cards_1 {
-          position: absolute;
-          left: -55px;
-          top: -210px;
-        }
-        .benefits_cards {
-          position: absolute;
-          top: -136px;
-          right: -75px;
-        }
-        .mdi_shield-car{
-          display: none;
-        }
-        .folder_house_2{
-          display: none;
-        }
-        .folder_house{
-          display: none;
-        }
-      }
-      flex-direction: column;
-      gap: 30px;
-      .sub_title{
-        display: none;
-      }
-      .sub_hidden{
-        display: block;
-      }
-    }
-    .item_right{
-      flex-direction: column-reverse;
-    }
-  }
-  .section_3{
-    .steps{
-      flex-direction: column;
-      align-items: center;
-      .line{
-        display: none;
-      }
-    }
-  }
-  .section_4 {
-    .calculator {
-      .wrapper_items {
-        flex-direction: column;
-        gap: 71px;
-        .item{
-          .wrapper{
-            width: 100%;
-            datalist{
-              width: 100%;
-              .option_hide{
-                display: none;
-              }
-            }
-          }
-          .wrapper_1{
-            width: 100%;
-            datalist{
-              width: 100%;
-              .option_hide{
-                display: none;
-              }
-            }
-          }
-        }
-      }
-
-      .predlojeniya {
-        .soglasie{
-          width: 239px;
-          div{
-            font-size: 11px;
-            text-align: center;
-          }
-        }
-        display: flex;
-        flex-direction: column;
-        .wrapper{
-          flex-direction: column;
-          .item{
-            margin-top: 27px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            align-items: center;
-            form{
-              .number_input{
-                margin: 0;
-              }
-            }
-            .btn{
-              margin: 0;
-              span{
-                width: 150px;
-              }
-            }
-          }
-          .info{
-            flex-direction: column;
-            align-items: start;
-            gap: 30px;
-            .item{
-              align-items: start;
-            }
-
-
-          }
-        }
-      }
-    }
-  }
-  .section_6{
-    .about_us{
-      padding: 20px 30px;
-      .sub_title{
-        font-size: 24px;
-        text-align: start;
-      }
-      .text{
-        padding: 0;
-        p{
-          font-size: 16px;
-          text-align: start;
-        }
-      }
-      .items{
-        flex-direction: column;
-      }
-    }
-  }
-  .section_7{
-    .item{
-      .top{
-        flex-direction: column;
-        align-items: start;
-      }
-      .wrapper{
-        flex-direction: column;
-        .left{
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 30px;
-          .btn-default{
-            position: inherit;
-            top: 0;
-            left: 0;
-          }
-          p{
-            width: 100%;
-          }
-        }
-      }
-    }
-  }
-  .footer{
-    .item{
-      .top{
-        flex-direction: column;
-        .links{
-          flex-direction: column;
-          align-items: center;
-          gap: 30px;
-        }
-      }
-      .middle{
-        .wrapper{
-          flex-direction: column;
-          .info_left{
-            flex-direction: column;
-            gap: 30px;
-
-          }
-        }
-      }
-      .bottom{
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
-        span{
-          width: 300px;
-          font-size: 16px;
-          text-align: center;
-        }
-      }
-    }
-  }
-}
 
 
 
