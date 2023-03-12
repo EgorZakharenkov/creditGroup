@@ -228,7 +228,7 @@ datalist {
   display: inline-block;
 }
 
-.show {
+.showDrop {
   display: flex;
   flex-direction: column;
   gap: 10px;

@@ -209,11 +209,10 @@ datalist {
   position: relative;
   display: inline-block;
 }
-.show {
+.showDrop {
   display: flex;
   flex-direction: column;
   gap: 10px;
-
 }
 .header_contacts{
   padding: 16px 0;
