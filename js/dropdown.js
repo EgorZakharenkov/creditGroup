@@ -1,7 +1,9 @@
 function Dropdown() {
-    document.getElementById("myDropdown").classList.toggle("show");
+    document.querySelectorAll("#myDropdown").classList.toggle("show");
 }
-
+function drop_adaptiv(){
+    document.querySelector(".drop_adaptiv").classList.toggle("show");
+}
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
 
