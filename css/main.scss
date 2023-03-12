@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 input{
   outline: none;
   border: none;
@@ -123,13 +124,18 @@ datalist {
   }
 }
 .title{
-  font-family: 'Raleway';
+  font-family: 'Gilroy';
   font-style: normal;
   font-weight: 700;
   font-size: 58px;
   line-height: 115%;
+  /* or 67px */
+  
   letter-spacing: -0.01em;
   font-feature-settings: 'pnum' on, 'lnum' on;
+  
+  /* black */
+  
   color: #2A2E33;
   span{
     background: linear-gradient(100.92deg, #A259FF 13.57%, #FF6250 97.65%), #2E323D;
@@ -139,12 +145,17 @@ datalist {
   }
 }
 .sub_title{
-  font-family: 'Raleway';
+  font-family: 'Gilroy';
   font-style: normal;
   font-weight: 700;
   font-size: 45px;
   line-height: 115%;
+  /* or 52px */
+  
   letter-spacing: -0.01em;
+  
+  /* black */
+  
   color: #2A2E33;
   z-index: 10;
   span{
@@ -164,6 +175,7 @@ datalist {
   margin-top: 30px;
   padding: 20px 0 20px 20px;
   a{
+    position: relative;
     font-family: 'Raleway';
     font-size: 15px;
     line-height: 180%;
@@ -174,7 +186,23 @@ datalist {
       background: linear-gradient(100.92deg, #A259FF 13.57%, #FF6250 97.65%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      text-fill-color: transparent;    }
+      text-fill-color: transparent;}
+      &:after {
+        display: block; 
+        position: absolute;
+        left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+        width: 0;/*задаём длинну линии до наведения курсора*/
+        height: 3px; /*задаём ширину линии*/
+        background: linear-gradient(100.92deg, #A259FF 13.57%, #FF6250 97.65%);
+        content: "";
+        transition: width 0.3s ease-out;
+        border-radius: 10px; /*задаём время анимации*/
+      }
+      
+      &:hover:after,
+      &:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
   }
 }
 .dropdown {
@@ -260,6 +288,7 @@ datalist {
     display: flex;
     gap:60px ;
     .link{
+      position: relative;
       text-decoration: none;
       font-family: 'Raleway';
       font-style: normal;
@@ -267,6 +296,22 @@ datalist {
       font-size: 16px;
       line-height: 180%;
       color: #2A2E33;
+      &:after {
+        display: block; 
+        position: absolute;
+        left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+        width: 0;/*задаём длинну линии до наведения курсора*/
+        height: 3px; /*задаём ширину линии*/
+        background: linear-gradient(100.92deg, #A259FF 13.57%, #FF6250 97.65%);
+        content: "";
+        transition: width 0.3s ease-out;
+        border-radius: 10px; /*задаём время анимации*/
+      }
+      
+      &:hover:after,
+      &:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
     }
   }
 }
@@ -287,14 +332,31 @@ datalist {
       gap: 4px;
     }
     .item{
+      position: relative;
       font-family: 'Raleway';
       font-style: normal;
-      font-weight: 700;
+      font-weight: 900;
       font-size: 15px;
       line-height: 180%;
       color: #2A2E33;
       text-decoration: none;
       cursor: pointer;
+      &:after {
+        display: block;
+        position: absolute;
+        left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+        width: 0;/*задаём длинну линии до наведения курсора*/
+        height: 3px; /*задаём ширину линии*/
+        background: linear-gradient(100.92deg, #A259FF 13.57%, #FF6250 97.65%);
+        content: "";
+        transition: width 0.3s ease-out;
+        border-radius: 10px; /*задаём время анимации*/
+      }
+      
+      &:hover:after,
+&:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
     }
   }
 }
@@ -397,7 +459,7 @@ datalist {
     backdrop-filter: blur(5px);
     border-radius: 40px;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     margin-bottom: 143px;
     .item{
@@ -436,6 +498,11 @@ datalist {
       flex-direction: column;
       z-index: 2;
       .benefits_cards{
+        position: absolute;
+        top: 305px;
+        right: 600px;
+      }
+      .benefits_1{
         position: absolute;
         top: 205px;
         right: 600px;
@@ -1285,6 +1352,7 @@ datalist {
       }
     }
     .messages{
+      position: relative;
       padding-right: 20px;
       height: 600px;
       overflow-y: scroll; /* прокрутка по вертикали */
@@ -1384,6 +1452,7 @@ color: #AAAAAA;
         align-items: center;
         gap: 60px;
         a{
+          position:relative;
           text-decoration: none;
           font-family: 'Raleway';
           font-style: normal;
@@ -1398,6 +1467,23 @@ color: #AAAAAA;
           font-feature-settings: 'pnum' on, 'lnum' on;
 
           color: #AAAAAA;
+          &:after {
+            display: block; 
+            position: absolute;
+            bottom: 0;
+            left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+            width: 0;/*задаём длинну линии до наведения курсора*/
+            height: 3px; /*задаём ширину линии*/
+            background: linear-gradient(100.92deg, #A259FF 13.57%, #FF6250 97.65%);
+            content: "";
+            transition: width 0.3s ease-out;
+            border-radius: 10px; /*задаём время анимации*/
+          }
+          
+          &:hover:after,
+          &:focus:after {
+      width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+    }
         }
       }
     }
@@ -1436,6 +1522,9 @@ color: #AAAAAA;
           .links{
             display: flex;
             gap: 15px;
+            a{
+              text-decoration: none;
+            }
           }
           span{
             font-family: 'Raleway';

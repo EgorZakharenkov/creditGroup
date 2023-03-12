@@ -228,6 +228,9 @@
   .section_7 .item .wrapper .left p {
     width: 100%;
   }
+  .footer {
+    margin-top: 50px;
+  }
   .footer .item .top {
     flex-direction: column;
   }
