@@ -1631,6 +1631,10 @@ datalist {
   }
 }
 
+.adaptiv_header {
+  display: none;
+}
+
 .sub_hidden {
   display: none;
 }/*# sourceMappingURL=main.css.map */
