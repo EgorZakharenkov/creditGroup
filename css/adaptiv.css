@@ -99,6 +99,8 @@
   }
   .section_2 .item .sub_hidden {
     display: block;
+    text-align: start;
+    width: 100%;
   }
   .section_2 .item_right {
     flex-direction: column-reverse;
@@ -145,7 +147,7 @@
   }
   .section_4 .calculator .predlojeniya .soglasie div {
     font-size: 11px;
-    text-align: center;
+    text-align: right;
   }
   .section_4 .calculator .predlojeniya .wrapper {
     flex-direction: column;
@@ -173,6 +175,13 @@
   }
   .section_4 .calculator .predlojeniya .wrapper .info .item {
     align-items: start;
+  }
+  .section_4 .predvaritel {
+    margin-left: 0;
+  }
+  .section_4 .predvaritel span {
+    width: 300px;
+    font-size: 16px;
   }
   .section_6 .about_us {
     padding: 30px 20px;
@@ -235,9 +244,16 @@
     flex-direction: column;
   }
   .footer .item .top .links {
+    margin-top: 50px;
     flex-direction: column;
     align-items: center;
     gap: 30px;
+  }
+  .footer .item .middle .info_left .item_phone {
+    margin-left: 28px;
+  }
+  .footer .item .middle .info_right {
+    margin-top: 20px;
   }
   .footer .item .middle .wrapper {
     flex-direction: column;
@@ -264,5 +280,375 @@
   }
   .adaptiv_header {
     display: block;
+  }
+  .main-section .content {
+    flex-direction: column-reverse;
+    gap: 13px;
+  }
+  .main-section .content .left-container .bottom {
+    flex-direction: column-reverse;
+  }
+  .main-section .content .left-container .wats {
+    text-align: center;
+  }
+  .main-section .content .left-container .header h1 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    /* or 30px */
+    font-feature-settings: "pnum" on, "lnum" on;
+    /* black */
+    color: #2A2E33;
+    max-width: 300px;
+  }
+  .main-section .content .left-container .header h1 br {
+    display: none;
+  }
+  .main-section .content .right-container img {
+    width: 320px;
+  }
+  .bistroe_odobrenie .item {
+    padding: 20px;
+  }
+  .bistroe_odobrenie .item .top_info {
+    flex-direction: column;
+  }
+  .bistroe_odobrenie .item .top_info .wrapper_btn {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .bistroe_odobrenie .item .top_info .wrapper_btn .btn-default {
+    width: 260px;
+    display: flex;
+    justify-content: center;
+  }
+  .bistroe_odobrenie .item .top_info .text {
+    width: 260px;
+  }
+  .bistroe_odobrenie .item .top_info .text p {
+    display: none;
+  }
+  .bistroe_odobrenie .item .top_info .text .title {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    /* or 31px */
+    font-feature-settings: "pnum" on, "lnum" on;
+    /* black */
+    color: #2A2E33;
+    max-width: 260px;
+    margin-left: 15px;
+  }
+  .bistroe_odobrenie .item .top_info .text .title br {
+    display: none;
+  }
+  .bistroe_odobrenie .item .bottom_info .item_bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .bistroe_odobrenie .item .bottom_info .item_bottom span {
+    max-width: 260px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 27px */
+    text-align: center;
+    font-feature-settings: "pnum" on, "lnum" on;
+    /* black */
+    color: #2A2E33;
+  }
+  .bistroe_odobrenie .item .text_adaptiv {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+  }
+  .bistroe_odobrenie .item .text_adaptiv span {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    /* or 25px */
+    text-align: center;
+    font-feature-settings: "pnum" on, "lnum" on;
+    /* gray */
+    color: #ABA3BC;
+    max-width: 260px;
+  }
+  .online_oformlenie .block {
+    padding: 30px 20px 30px 20px;
+  }
+  .online_oformlenie .block p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+  }
+  .online_oformlenie .block .title {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    /* or 31px */
+    font-feature-settings: "pnum" on, "lnum" on;
+    /* black */
+    color: #2A2E33;
+  }
+  .online_oformlenie .block .wrapper_inputs {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .online_oformlenie .block .wrapper_inputs .left_content {
+    width: 100%;
+    gap: 35px;
+  }
+  .online_oformlenie .block .wrapper_inputs .left_content .item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+  }
+  .online_oformlenie .block .wrapper_inputs .left_content .item .delete_file {
+    display: none;
+  }
+  .online_oformlenie .block .wrapper_inputs .left_content .item .delete_file .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .online_oformlenie .block .wrapper_inputs .left_content .item .btn_file {
+    display: none;
+  }
+  .online_oformlenie .block .wrapper_inputs .left_content .item .btn_file_docs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .online_oformlenie .block .wrapper_inputs .left_content .item .btn_file_docs span {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.015em;
+    font-feature-settings: "pnum" on, "lnum" on;
+    /* white */
+    color: #FFFFFF;
+  }
+  .online_oformlenie .block .wrapper_inputs .left_content .item .docs_text {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .online_oformlenie .block .wrapper_inputs .left_content .item .docs_text span {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    /* identical to box height, or 29px */
+    font-feature-settings: "pnum" on, "lnum" on;
+    /* black */
+    color: #2A2E33;
+  }
+  .online_oformlenie .block .bottom_info {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .online_oformlenie .block .bottom_info .wrapp_btn .sogl {
+    width: 260px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    /* or 18px */
+    text-align: right;
+    font-feature-settings: "pnum" on, "lnum" on;
+    /* gray */
+    color: #ABA3BC;
+    text-align: right;
+  }
+  .online_oformlenie .block .bottom_info .wrapp_btn .sogl br {
+    display: none;
+  }
+  .online_oformlenie .block .bottom_info .wrapp_btn .btn {
+    display: flex;
+    justify-content: center;
+    padding: 20px 29px;
+  }
+  .online_oformlenie .block .bottom_info .wrapp_btn .btn span {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.015em;
+    font-feature-settings: "pnum" on, "lnum" on;
+    /* white */
+    color: #FFFFFF;
+  }
+  .online_oformlenie .block .bottom_info .sub_title {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    /* or 30px */
+    font-feature-settings: "pnum" on, "lnum" on;
+    /* black */
+    color: #2A2E33;
+    max-width: 260px;
+  }
+  .odobryaem .title {
+    max-width: 300px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    /* or 30px */
+    font-feature-settings: "pnum" on, "lnum" on;
+    /* black */
+    color: #2A2E33;
+  }
+  .odobryaem p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+  }
+  .odobryaem .wrapper .item img {
+    width: 300px;
+  }
+  .conditions .right-container {
+    flex-direction: column-reverse;
+  }
+  .credit_15_mins .item {
+    padding: 40px 20px 30px 20px;
+    flex-direction: column;
+  }
+  .credit_15_mins .item .left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .credit_15_mins .item .left h2 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    /* or 42px */
+    text-align: center;
+    font-feature-settings: "pnum" on, "lnum" on;
+    /* white */
+    max-width: 260px;
+    color: #FFFFFF;
+  }
+  .credit_15_mins .item .right {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .credit_15_mins .item .right p {
+    font-size: 12px;
+    text-align: right;
+  }
+  .credit_15_mins .item .right p br {
+    display: none;
+  }
+  .credit_15_mins .item .right .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .credit_15_mins .item .right .wrapper .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .credit_15_mins .item .right .wrapper .number_input {
+    max-width: 280px;
+  }
+  .section_6 .about_us .sub_title {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    /* or 30px */
+    text-align: center;
+    font-feature-settings: "pnum" on, "lnum" on;
+    /* black */
+    color: #2A2E33;
+    max-width: 280px;
+  }
+  .section_6 .about_us .items {
+    padding: 30px 10px;
+  }
+  .section_6 .about_us .items .item_txt {
+    padding: 22px;
+  }
+  .section_6 .about_us .items .item_txt span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    max-width: 206 px;
+  }
+  .slider #slider ul {
+    overflow: visible;
+    width: 100%;
+    margin: 0;
+  }
+  .slider #slider ul li {
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+  }
+  .slider #slider ul li img {
+    width: 260px;
+    height: 188px;
+  }
+  .slider .wrapper {
+    position: relative;
+    flex-direction: column;
+  }
+  .slider .wrapper img {
+    width: 300px;
+  }
+  .slider .wrapper .left_content .sub_title {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    /* or 31px */
+    font-feature-settings: "pnum" on, "lnum" on;
+    /* black */
+    color: #2A2E33;
+    max-width: 300px;
+  }
+  .slider .wrapper .left_content .btn_wrapper {
+    position: absolute;
+    top: 822px;
+    left: 81px;
   }
 }/*# sourceMappingURL=adaptiv.css.map */

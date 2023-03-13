@@ -1,3 +1,5 @@
+
+
 .overlay {
     /* Высота и ширина зависят от того, как вы хотите показать наложение (см. JS ниже) */   
     height: 100%;
@@ -127,6 +129,9 @@ color: #2A2E33;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    .item_phone{
+      margin-left: 28px;
+    }
     .item{
         display: flex;
         align-items: center;
@@ -194,7 +199,7 @@ color: #ABA3BC;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
-    gap: 40px;
+   justify-content: space-between;
     img{
         cursor: pointer;
     }

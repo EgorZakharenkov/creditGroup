@@ -1,6 +1,4 @@
-function Dropdown() {
-    document.querySelectorAll("#myDropdown").classList.toggle("show");
-}
+
 function drop_adaptiv(){
     document.querySelector(".drop_adaptiv").classList.toggle("show");
 }

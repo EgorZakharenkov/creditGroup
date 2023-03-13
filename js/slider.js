@@ -6,7 +6,7 @@ jQuery(document).ready(function ($) {
 
   $("#slider").css({ width: slideWidth, height: slideHeight });
 
-  $("#slider ul").css({ width: sliderUlWidth, marginLeft: -slideWidth });
+  $("#slider ul").css({ width: sliderUlWidth, marginLeft: -slideWidth  });
 
   $("#slider ul li:last-child").prependTo("#slider ul");
 
@@ -61,6 +61,7 @@ function currentSlide(n) {
   showSlides((slideIndex = n));
 }
 
+
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -79,4 +80,38 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
+}
+
+
+
+
+var slide_mobile = 1;
+show(slide_mobile);
+
+function plus(n) {
+  show((slide_mobile += n));
+}
+
+function current(n) {
+  showSlides_message((slide_mobile = n));
+}
+
+function show(n) {
+  var i;
+  var slide = document.querySelectorAll(".slides_Mobile");
+  var dot = document.getElementsByClassName("dot");
+  if (n > slide.length) {
+    slide_mobile = 1;
+  }
+  if (n < 1) {
+    slide_mobile = slide.length;
+  }
+  for (i = 0; i < slide.length; i++) {
+    slide[i].style.display = "none";
+  }
+  for (i = 0; i < dot.length; i++) {
+    dot[i].className = dot[i].className.replace(" active", "");
+  }
+  slide[slide_mobile - 1].style.display = "block";
+  dot[slide_mobile - 1].className += " active";
 }
