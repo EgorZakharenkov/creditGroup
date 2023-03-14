@@ -790,22 +790,23 @@ line-height: 180%;
     }
   }
   .slider{
-    // .btn_slide_hide{
-    //   display: flex;
-    //   align-items: center;
-    //   justify-content: center;
-    //   margin-top: 20px;
-    //   gap:10px;
-    //   button{
-    //     background: #E5E8EE;
-    //     border-radius: 20px;
-    //     width: 70px;
-    //     height: 70px;
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: center;
-    //   }
-    // }
+    max-height: 850px;
+    .btn_slide_hide{
+      display: none;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      gap:10px;
+      button{
+        background: #E5E8EE;
+        border-radius: 20px;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
     
     #slider{
       ul{
