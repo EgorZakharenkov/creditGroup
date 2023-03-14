@@ -966,7 +966,7 @@ datalist {
 .section_4 .wrapper_1 .progress_1 {
   position: absolute;
   content: "";
-  width: 50%;
+  width: 60%;
   height: 10px;
   background: linear-gradient(100.92deg, #A259FF 13.57%, #FF6250 97.65%);
   top: 45%;

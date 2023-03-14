@@ -351,12 +351,13 @@
               <div class="summ">
                 <span> Сумма займа </span>
                 <div class="summ_box">
-                  <span>5 000 000</span>
+                  <span  class="value_calck_price">5 000 000</span>
                   <p>₽</p>
                 </div>
               </div>
               <div class="wrapper">
                 <input
+                        onchange="inputPrice()"
                         list="range_list"
                         type="range"
                         min="0"
@@ -379,17 +380,18 @@
               <div class="summ">
                 <span> Срок займа </span>
                 <div class="summ_box">
-                  <span>19</span>
+                  <span  class="value_calk_srok">19</span>
                   <p>месяцев</p>
                 </div>
               </div>
               <div class="wrapper_1">
                 <input
+                      onchange="inputSrok()"
                         list="range_list_1"
                         type="range"
                         min="0"
-                        max="100"
-                        value="50"
+                        max="30"
+                        value="19"
                         class="slider_1"
                 />
                 <datalist id="range_list_1">
