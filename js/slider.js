@@ -6,7 +6,7 @@ jQuery(document).ready(function ($) {
 
   $("#slider").css({ width: slideWidth, height: slideHeight });
 
-  $("#slider ul").css({ width: sliderUlWidth, marginLeft: -slideWidth  });
+  $("#slider ul").css({ width: sliderUlWidth, marginLeft: - 330  });
 
   $("#slider ul li:last-child").prependTo("#slider ul");
 
@@ -65,7 +65,7 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  var dots = document.getElementsByClassName("dot_slide_2");
   if (n > slides.length) {
     slideIndex = 1;
   }
