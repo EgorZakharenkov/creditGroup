@@ -29,4 +29,7 @@ function inputSrok(){
     let a = document.querySelector(".value_calk_srok");
     let b = document.querySelector(".slider_1");
     a.textContent = b.value;
+    if(b.value < 6){
+        a.textContent = 6
+    }
 }
